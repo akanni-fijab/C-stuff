@@ -1,12 +1,16 @@
-#include <stdio.h>
-
+#include "stdio.h"
 
 int main(){
-    int input_num_one,input_num_two;
 
-    printf("ENTER A NUMBER ");
-    scanf("%1d%1d",&input_num_one,&input_num_two);
-    printf("THE REVERSE OF THE NUMBER IS %d%d\n",input_num_two,input_num_one);
+    char name_str[7];
+    int i;
+
+
+    for(i=6;i>=0; i--){
+        name_str[i]= getchar();
+    }
+
+        printf("%s\n",name_str);
 
 
     return 0;
