@@ -1,35 +1,20 @@
-	#include <stdio.h>
+#include <stdio.h>
+int main(){
+    char c,d;
 
-	int main() {
-		int grades[2][5];
-		float average;
-        float total_for_each;
-		int i;
-		int j;
+    // c= getchar();
+    // printf("%c\n",c);
 
-		grades[0][0] = 80;
-		grades[0][1] = 70;
-		grades[0][2] = 65;
-		grades[0][3] = 89;
-		grades[0][4] = 90;
+    char arr[]="akanin";
 
-		grades[1][0] = 85;
-		grades[1][1] = 80;
-		grades[1][2] = 80;
-		grades[1][3] = 82;
-		grades[1][4] = 87;
+// putchar(c);
+// prints the contents of the integer variable c as a character, usually on the screen aspa it prints it on the screen
+//not that it take stdout and it only prints ane char at a
 
-		for (i = 0; i < 2; i++) {
-			average = 0;
-            total_for_each = 0;
-			
-			for (j = 0; j < 5; j++) { // it iterates to completion for eaach iteration of the outer loop
-				total_for_each += grades[i][j];
-			}
+    printf("%i\n",EOF); // ==> EOF is -1 
 
-			average = total_for_each/5.0;
-			printf("The average marks obtained in subject %d is: %.2f\n", i, average);
-		}
 
-		return 0;
-	}
+    putchar(arr[1]);
+    // printf("%c\n",d);
+    return 0;
+}
