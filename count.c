@@ -10,5 +10,11 @@ int main(){
     }
     printf("%ld\n",nc);
 
+    double cn;
+    for(cn=0; getchar() != EOF; ++cn)
+        ;//I guess this is null
+
+    printf("%.0f\n",cn);
+
     return 0;
 }
