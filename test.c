@@ -8,7 +8,7 @@ int main(){
     char arr[]="akanin";
 
 // putchar(c);
-// prints the contents of the integer variable c as a character, usually on the screen aspa it prints it on the screen
+// prints the contents of the integer variable c as a character.
 //not that it take stdout and it only prints ane char at a
 
     printf("%i\n",EOF); // ==> EOF is -1 
