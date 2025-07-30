@@ -1,49 +1,41 @@
-#include <stdio.h> // PRE-PROCESSOR DIRECTIVE 
-// #include <stdbool.h>
-#define BOOL char
-#define TRUE 1
-#define FALSE 0
-// instead of use a whole library I could just define the preprocessor directives 
+#include <stdio.h>
+void mario(int height){
+    //To print it the number of times required 
+    int i =0;
 
-int main(){
+    for(i=0; i<height; i++){
+        // printf("#");
+        // space-=1;
+        
+        printf("#");
+     }
+     
+     printf("\n"); // makes it such that each call of the function startns on a new line
+}
 
-// /*
-// ints are 4 bytes
-// floats are 4 bytes
-// doouble 8 bytes
 
-//Width is the mininum number of characters to print
-
-//Format specifiers specify width precision and flags 
-    // int testNum;
-    // testNum = 1234;
-    // printf("%0d\n",testNum);
-    char my_initial;
-    my_initial = 'a'; // ===> it's value is 97, probably ANSI shit
-
-    int my_int_array[5];
-    my_int_array[0] = 12;
-    my_int_array[1] = 13;
-    my_int_array[2] = 14;
-    my_int_array[3] = 15;
-    my_int_array[4] = 16;
-
-    printf("The numerical value if my initial a, is %d\n",my_initial); // obtain int val of char a
-
-    // BOOL = 'N';
-    // printf("%c",BOOL);
-
-    if(TRUE){
-        printf("I am jose ");
-    }
-    else{
-        printf("I am tobi");
-    }
-
-    printf("The last value of my five digit array is %d,",my_int_array[4]);
+int main(void){
+    int height,i,ini_space;
     
+     
+    do{
+        printf("Height: ");
+        scanf("%d",&height);
 
+    }
+    while(height<1);
+    int dummy=height;
 
-    
+    for(i=1; i<=height; i++){ // To now print it out on the required line
+        // mario(i+1);
+        
+        for(ini_space=dummy-1;ini_space>0; ini_space--){// Print out (height - 1) spaces
+            printf(" ");
+        }
+        mario(i);
+        dummy-=1;
+    }
+   
+
     return 0;
-} 
+}
